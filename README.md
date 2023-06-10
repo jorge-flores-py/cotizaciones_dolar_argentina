@@ -1,24 +1,28 @@
-# cotizaciones_dolar_argentina
-Proyecto de  Data Engineering
-
-
 # Proyecto de Obtención de Cotizaciones del Dólar en Argentina
 
-Este proyecto utiliza Python, Apache Airflow y Amazon Redshift para obtener y procesar las diferentes cotizaciones del dólar en Argentina. Proporciona una solución automatizada que te permite obtener de manera regular y confiable las tasas de cambio del dólar en el mercado argentino.
+Este proyecto utiliza Python, Apache Airflow, Amazon Redshift y Docker para obtener y procesar las diferentes cotizaciones del dólar en Argentina. Proporciona una solución automatizada que te permite obtener de manera regular y confiable las tasas de cambio del dólar en el mercado argentino.
 
 ## Descripción
 
-El objetivo principal de este proyecto es brindar una herramienta que facilite el seguimiento y análisis de las cotizaciones del dólar en Argentina. Utiliza Apache Airflow, una plataforma de orquestación de tareas, para programar y ejecutar de manera automatizada una serie de tareas relacionadas con la obtención de datos y su procesamiento.
+El objetivo principal de este proyecto es brindar una herramienta que facilite el seguimiento y análisis de las cotizaciones del dólar en Argentina. Utiliza Apache Airflow, una plataforma de orquestación de tareas, para programar y ejecutar de manera automatizada una serie de tareas relacionadas con la obtención de datos y su procesamiento. Los datos se almacenan en una base de datos en Amazon Redshift y se utilizan contenedores Docker para la ejecución del proyecto.
 
 ## Tecnologías utilizadas
 
-Este proyecto utiliza [Python](https://www.python.org/), [Apache Airflow](https://airflow.apache.org/) y [Amazon Redshift](https://aws.amazon.com/redshift/) para obtener y procesar las diferentes cotizaciones del dólar en Argentina. Proporciona una solución automatizada que te permite obtener de manera regular y confiable las tasas de cambio del dólar en el mercado argentino.
+Este proyecto utiliza las siguientes tecnologías:
 
 - [Python](https://www.python.org/): Lenguaje de programación utilizado para implementar las diferentes funcionalidades del proyecto.
 - [Apache Airflow](https://airflow.apache.org/): Plataforma de orquestación de tareas utilizada para programar y ejecutar los flujos de trabajo.
 - [Amazon Redshift](https://aws.amazon.com/redshift/): Servicio de almacenamiento y análisis de datos en la nube utilizado para almacenar y consultar las cotizaciones del dólar.
-- Otros paquetes y bibliotecas de Python: Se utilizan diversas bibliotecas de Python, como requests, psycopg2, pandas, entre otras, para realizar las solicitudes de datos, la conexión a la base de datos y el procesamiento de los resultados.
+- [Docker](https://www.docker.com/): Plataforma de contenedores utilizada para empaquetar y ejecutar la aplicación de manera portátil y reproducible.
 
+## Bibliotecas utilizadas
+
+Este proyecto hace uso de las siguientes bibliotecas de Python:
+
+- `requests`: Utilizada para realizar solicitudes de datos a fuentes externas.
+- `psycopg2`: Utilizada para la conexión y manipulación de la base de datos en Amazon Redshift.
+- `pandas`: Utilizada para el procesamiento y análisis de datos.
+- `smtplib`: Utilizada para el envío de correos electrónicos.
 
 ## Funcionalidades principales
 
@@ -27,18 +31,13 @@ Este proyecto utiliza [Python](https://www.python.org/), [Apache Airflow](https:
 - **Procesamiento y análisis**: Se realizan transformaciones y cálculos sobre los datos obtenidos para obtener métricas relevantes, como tasas de cambio promedio, variaciones porcentuales, entre otros.
 - **Generación de informes**: Se generan informes automatizados con los resultados del procesamiento, brindando una visión clara y actualizada de las cotizaciones del dólar en Argentina.
 - **Programación y automatización**: Utilizando Apache Airflow, se programan y ejecutan las tareas de obtención, procesamiento y generación de informes de forma automatizada y programada.
+- **Contenedores Docker**: Se utiliza Docker para empaquetar y ejecutar la aplicación de manera portátil y reproducible.
 
-Este proyecto es una solución versátil y escalable que te permite obtener y analizar las cotizaciones del dólar en Argentina de manera eficiente y confiable. Puedes adaptarlo y personalizarlo según tus necesidades específicas y ampliarlo con funcionalidades adicionales si lo deseas.
-
-
-
-# Tareas realizadas por el DAG
+## Tareas realizadas por el DAG
 
 ![Captura de pantalla](images/dags.png)
 
-Aquí puedes agregar una descripción o detalles adicionales sobre las tareas realizadas por el DAG.
-
-## Tareas del DAG
+El DAG (Directed Acyclic Graph) del proyecto consta de las siguientes tareas:
 
 - `task_1`: Conexión a la base de datos - Esta tarea establece una conexión a la base de datos de Redshift. Utiliza la función `conexion_redshift` y recibe como argumento la fecha (`{{ ds }}`) y la hora de ejecución (`{{ execution_date.hour }}`).
 
@@ -50,5 +49,6 @@ Aquí puedes agregar una descripción o detalles adicionales sobre las tareas re
 
 - `task_5`: Enviar correo de confirmación - Esta tarea envía un correo electrónico de confirmación. Utiliza la función `enviar`.
 
+Cada tarea desempeña un papel específico en el flujo de trabajo del proyecto y contribuye a la obtención y procesamiento de las cotizaciones del dólar en Argentina.
 
 
