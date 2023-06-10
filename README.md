@@ -14,6 +14,10 @@ El objetivo principal de este proyecto es brindar una herramienta que facilite e
 
 Este proyecto utiliza [Python](https://www.python.org/), [Apache Airflow](https://airflow.apache.org/) y [Amazon Redshift](https://aws.amazon.com/redshift/) para obtener y procesar las diferentes cotizaciones del dólar en Argentina. Proporciona una solución automatizada que te permite obtener de manera regular y confiable las tasas de cambio del dólar en el mercado argentino.
 
+- [Python](https://www.python.org/): Lenguaje de programación utilizado para implementar las diferentes funcionalidades del proyecto.
+- [Apache Airflow](https://airflow.apache.org/): Plataforma de orquestación de tareas utilizada para programar y ejecutar los flujos de trabajo.
+- [Amazon Redshift](https://aws.amazon.com/redshift/): Servicio de almacenamiento y análisis de datos en la nube utilizado para almacenar y consultar las cotizaciones del dólar.
+- Otros paquetes y bibliotecas de Python: Se utilizan diversas bibliotecas de Python, como requests, psycopg2, pandas, entre otras, para realizar las solicitudes de datos, la conexión a la base de datos y el procesamiento de los resultados.
 
 - Python: Lenguaje de programación utilizado para implementar las diferentes funcionalidades del proyecto.
 - Apache Airflow: Plataforma de orquestación de tareas utilizada para programar y ejecutar los flujos de trabajo.
