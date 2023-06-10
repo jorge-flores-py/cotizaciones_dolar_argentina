@@ -1,0 +1,40 @@
+3a30134620ef
+*** Reading local file: /opt/airflow/logs/dag_id=Cotizaciones_ETL/run_id=manual__2023-06-10T19:47:11.266622+00:00/task_id=extraer_data/attempt=1.log
+[2023-06-10 19:47:20,985] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Cotizaciones_ETL.extraer_data manual__2023-06-10T19:47:11.266622+00:00 [queued]>
+[2023-06-10 19:47:21,004] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Cotizaciones_ETL.extraer_data manual__2023-06-10T19:47:11.266622+00:00 [queued]>
+[2023-06-10 19:47:21,005] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-10 19:47:21,006] {taskinstance.py:1377} INFO - Starting attempt 1 of 6
+[2023-06-10 19:47:21,007] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-10 19:47:21,029] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): extraer_data> on 2023-06-10 19:47:11.266622+00:00
+[2023-06-10 19:47:21,035] {standard_task_runner.py:52} INFO - Started process 1023 to run task
+[2023-06-10 19:47:21,038] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'Cotizaciones_ETL', 'extraer_data', 'manual__2023-06-10T19:47:11.266622+00:00', '--job-id', '170', '--raw', '--subdir', 'DAGS_FOLDER/ETL_cot.py', '--cfg-path', '/tmp/tmpahfxi5v0', '--error-file', '/tmp/tmp3mlac7rm']
+[2023-06-10 19:47:21,040] {standard_task_runner.py:80} INFO - Job 170: Subtask extraer_data
+[2023-06-10 19:47:21,199] {task_command.py:371} INFO - Running <TaskInstance: Cotizaciones_ETL.extraer_data manual__2023-06-10T19:47:11.266622+00:00 [running]> on host 3a30134620ef
+[2023-06-10 19:47:21,279] {logging_mixin.py:115} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:202 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2023-06-10 19:47:21,353] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=jorge
+AIRFLOW_CTX_DAG_ID=Cotizaciones_ETL
+AIRFLOW_CTX_TASK_ID=extraer_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-10T19:47:11.266622+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-06-10T19:47:11.266622+00:00
+[2023-06-10 19:47:21,355] {logging_mixin.py:115} INFO - Adquiriendo data para la fecha: 2023-06-10 19
+[2023-06-10 19:47:21,363] {logging_mixin.py:115} INFO - OBTENIENDO DATOS DE LAS COTIZACIONES DE LOS BANCOS
+[2023-06-10 19:47:32,918] {logging_mixin.py:115} INFO - Datos Obtenidos cotizaciones de bancos
+[2023-06-10 19:47:32,918] {logging_mixin.py:115} INFO - --------------------------------------
+[2023-06-10 19:47:32,919] {logging_mixin.py:115} INFO - OBTENIENDO DATOS DE LAS COTIZACIONES PRINCIPALES
+[2023-06-10 19:47:41,405] {logging_mixin.py:115} INFO - Datos Obtenidos de cotizaciones principales
+[2023-06-10 19:47:41,406] {logging_mixin.py:115} INFO - --------------------------------------
+[2023-06-10 19:47:41,406] {logging_mixin.py:115} INFO - OBTENIENDO EVOLUCION DE DOLAR OFICIAL
+[2023-06-10 19:47:42,300] {logging_mixin.py:115} INFO - Evolucion del dolar oficial obtenida
+[2023-06-10 19:47:42,301] {logging_mixin.py:115} INFO - --------------------------------------
+[2023-06-10 19:47:42,302] {logging_mixin.py:115} INFO - OBTENIENDO EVOLUCION DE DOLAR BLUE
+[2023-06-10 19:47:43,139] {logging_mixin.py:115} INFO - Evolucion del dolar blue obtenida
+[2023-06-10 19:47:43,139] {logging_mixin.py:115} INFO - --------------------------------------
+[2023-06-10 19:47:43,140] {python.py:173} INFO - Done. Returned value was: None
+[2023-06-10 19:47:43,157] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=Cotizaciones_ETL, task_id=extraer_data, execution_date=20230610T194711, start_date=20230610T194720, end_date=20230610T194743
+[2023-06-10 19:47:43,187] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-06-10 19:47:43,232] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+

@@ -19,10 +19,6 @@ Este proyecto utiliza [Python](https://www.python.org/), [Apache Airflow](https:
 - [Amazon Redshift](https://aws.amazon.com/redshift/): Servicio de almacenamiento y análisis de datos en la nube utilizado para almacenar y consultar las cotizaciones del dólar.
 - Otros paquetes y bibliotecas de Python: Se utilizan diversas bibliotecas de Python, como requests, psycopg2, pandas, entre otras, para realizar las solicitudes de datos, la conexión a la base de datos y el procesamiento de los resultados.
 
-- Python: Lenguaje de programación utilizado para implementar las diferentes funcionalidades del proyecto.
-- Apache Airflow: Plataforma de orquestación de tareas utilizada para programar y ejecutar los flujos de trabajo.
-- Amazon Redshift: Servicio de almacenamiento y análisis de datos en la nube utilizado para almacenar y consultar las cotizaciones del dólar.
-- Otros paquetes y bibliotecas de Python: Se utilizan diversas bibliotecas de Python, como requests, psycopg2, pandas, entre otras, para realizar las solicitudes de datos, la conexión a la base de datos y el procesamiento de los resultados.
 
 ## Funcionalidades principales
 

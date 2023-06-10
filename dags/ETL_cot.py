@@ -261,6 +261,20 @@ def cargar_datos(exec_date): # Cargamos los datos
         port='5439')
     cur = conn.cursor()
 
+     # Cargar datos de BANCOS principales
+    cot_bancos_file = "cot_bancos_" + str(date.strftime('%Y-%m-%d-%H')) + ".csv"
+    cot_bancos_records = pd.read_csv(dag_path + '/raw_data/' + cot_bancos_file)
+    cot_bancos_tabla = 'cotizaciones'
+    cot_bancos_columns = ["id", "banco", "compra", "venta", "fecha", "fecha_descarga"]
+    cot_bancos_values = [tuple(x) for x in cot_bancos_records.to_numpy()]
+    cur.execute(f"DELETE FROM {cot_bancos_tabla}")
+    print("DATOS BORRADOS")
+    cot_bancos_insert_sql = f"INSERT INTO {cot_bancos_tabla} ({', '.join(cot_bancos_columns)}) VALUES %s"
+    cur.execute("BEGIN")
+    execute_values(cur, cot_bancos_insert_sql, cot_bancos_values)
+    cur.execute("COMMIT")
+    print("DATOS DE BANCOS PRINCIPALES CARGADOS CON ÉXITO")
+
       # Cargar datos de cotizaciones principales
     cot_principales_file = "cot_principales_" + str(date.strftime('%Y-%m-%d-%H')) + ".csv"
     cot_principales_records = pd.read_csv(dag_path + '/raw_data/' + cot_principales_file)
