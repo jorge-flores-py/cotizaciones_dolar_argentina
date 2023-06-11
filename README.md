@@ -51,4 +51,8 @@ El DAG (Directed Acyclic Graph) del proyecto consta de las siguientes tareas:
 
 Cada tarea desempeña un papel específico en el flujo de trabajo del proyecto y contribuye a la obtención y procesamiento de las cotizaciones del dólar en Argentina.
 
+## Dashboard de Power BI
 
+Puedes acceder al dashboard de Power BI para visualizar las cotizaciones del dólar en Argentina en el siguiente enlace:
+
+[PBI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNTE4MzNhMDQtOWQxOC00MGFiLWIyNGQtMDlhZjYxNTU4YWUwIiwidCI6IjIzZTljOWRmLTM2NmEtNGJkMy1hZWYzLTc3NGM5MTY1ZjI2ZCJ9)
