@@ -62,4 +62,5 @@ Puedes acceder al dashboard de Power BI para visualizar las cotizaciones del dó
     <img src="images/powerbi.png" alt="Captura de pantalla 2" width="200"/>
     <img src="images/Python-Logo.png" alt="Captura de pantalla 2" width="200"/>
     <img src="images/redshift.png" alt="Captura de pantalla 2" width="200"/>
+    <img src="images/Docker.png" alt="Captura de pantalla 2" width="200"/>
 </p>
