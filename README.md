@@ -58,8 +58,8 @@ Puedes acceder al dashboard de Power BI para visualizar las cotizaciones del dó
 [PBI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNTE4MzNhMDQtOWQxOC00MGFiLWIyNGQtMDlhZjYxNTU4YWUwIiwidCI6IjIzZTljOWRmLTM2NmEtNGJkMy1hZWYzLTc3NGM5MTY1ZjI2ZCJ9)
 
 <p align="center">
-    <img src="images/airflow.png" alt="Captura de pantalla 1" width="400"/>
-    <img src="images/powerbi.png" alt="Captura de pantalla 2" width="400"/>
-    <img src="images/Python-Logo.png" alt="Captura de pantalla 2" width="400"/>
-    <img src="images/redshift.png" alt="Captura de pantalla 2" width="400"/>
+    <img src="images/airflow.png" alt="Captura de pantalla 1" width="200"/>
+    <img src="images/powerbi.png" alt="Captura de pantalla 2" width="200"/>
+    <img src="images/Python-Logo.png" alt="Captura de pantalla 2" width="200"/>
+    <img src="images/redshift.png" alt="Captura de pantalla 2" width="200"/>
 </p>
